@@ -1,0 +1,54 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width:800px;
+  background-color: aqua;
+  display:grid;
+  grid-template-rows:repeat(5,50px);
+  grid-template-areas: "chair"
+                        "width"
+                        "height"
+                        "depth"
+                        "weight";
+
+
+}
+.chair{
+grid-area:chair;
+background-color: #1a9142;
+color: white;
+
+}
+.width{
+  grid-area:width;
+  background-color:aquamarine;
+}
+.height{
+  grid-area:height;
+  background-color:blue;
+}
+.depth{
+  grid-area:depth;
+  background-color:blueviolet;
+}
+.weight{
+  grid-area:weight;
+  background-color:burlywood;
+}
+.inside{
+  display:flex;
+  flex-direction:column;
+}
+
